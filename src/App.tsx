@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>Camper shop basic setup</h1>
+      <h1 className="text-5xl font-bold underline">Hello world!</h1>
     </>
   );
 }
