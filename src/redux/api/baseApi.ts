@@ -38,9 +38,17 @@ export const baseApi = createApi({
             },
             providesTags: ["Products"],
         }),
+        getSingleProduct: builder.query({
+            query: (id) => ({
+                url: `/products/${id}`,
+                method: "GET",
+            }),
+            providesTags: ["Products"],
+        }),
     }),
 });
 
 export const {
     useGetProductsQuery,
+    useGetSingleProductQuery,
 } = baseApi;
