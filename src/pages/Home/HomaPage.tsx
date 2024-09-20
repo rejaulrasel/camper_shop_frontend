@@ -10,13 +10,13 @@ const HomePage = () => {
     <div>
       <HeroSection />
       <div className="max-w-screen-xl mx-auto">
-        {/* <BestSellingSection /> */}
-        {/* <CategorySection /> */}
+        <BestSellingSection />
+        <CategorySection />
       </div>
       {/* <FeaturedSection /> */}
       <div className="max-w-screen-xl mx-auto">
-        {/* <TestimonialSection /> */}
-        {/* <FAQSection /> */}
+        <TestimonialSection />
+        <FAQSection />
       </div>
     </div>
   );

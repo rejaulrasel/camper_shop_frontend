@@ -1,4 +1,4 @@
-import { useGetProductsQuery } from "@/redux/api/baseApi";
+import { useGetProductsQuery } from "../../redux/api/baseApi";
 import ProductCart, { TProduct } from "../ProductCart/ProductCard";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";

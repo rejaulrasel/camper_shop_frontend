@@ -1,22 +1,22 @@
-import image1 from "../../assets/images/category/Accessories.jpeg";
-import image2 from "../../assets/images/category/Apparel.jpeg";
+import image1 from "../../assets/images/category/tents.jpg";
+import image2 from "../../assets/images/category/young-hipster-man-traveling-with-backpack-autumn-forest-wearing-warm-jacket-hat_285396-9782.avif";
 import image3 from "../../assets/images/category/Climbing-Gear.jpeg";
 import image4 from "../../assets/images/category/Headwear.jpeg";
-import image5 from "../../assets/images/category/Hiking-Boots.jpg";
+import image5 from "../../assets/images/category/gear.jpg";
 import image6 from "../../assets/images/category/Jackets.jpeg";
 
 const categoryData = [
   {
     id: 1,
-    name: "Accessories",
+    name: "Tents & Shelters",
     image: image1,
-    description: "Accessories you didn't know you needed.",
+    description: "Durable tents and shelters for all weather conditions",
   },
   {
     id: 2,
-    name: "Apparel",
+    name: "Sleeping Gear",
     image: image2,
-    description: "Check out our line of non-hiking clothes.",
+    description: "Cozy sleeping bags and pads for a good night's rest",
   },
   {
     id: 3,
@@ -26,9 +26,9 @@ const categoryData = [
   },
   {
     id: 4,
-    name: "Headwear",
+    name: "Backpacks & Bags",
     image: image4,
-    description: "Our beanies are so comfy you won't believe it.",
+    description: "Versatile packs for hiking and gear organization",
   },
   {
     id: 5,

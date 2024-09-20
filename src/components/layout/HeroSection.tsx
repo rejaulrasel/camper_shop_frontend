@@ -49,13 +49,13 @@ const HeroSection = () => {
               data-aos="fade-up"
               className="text-orange-500 font-semibold text-sm md:text-xl"
             >
-              OUTDOOR EXPLORATION
+              Camphing Adventure
             </p>
             <h1
               data-aos="fade-up"
               className="text-3xl md:text-5xl font-medium text-gray-100 font-young-serif"
             >
-              Gear for when it <br /> actually matters.
+              Get, set and go out <br /> what actually matters.
             </h1>
             <p
               data-aos="fade-up"

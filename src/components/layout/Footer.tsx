@@ -211,7 +211,7 @@ const Footer = () => {
                 src={logo}
                 alt="mountain-image"
               />
-              <h2 className="font-bold text-lg md:text-xl lg:text-3xl text-orange-500 font-young-serif">
+              <h2 className="font-bold text-lg md:text-xl lg:text-3xl text-white font-young-serif">
                 Campers Shop
               </h2>
             </Link>
