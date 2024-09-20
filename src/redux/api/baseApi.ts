@@ -7,6 +7,14 @@ export const baseApi = createApi({
     }),
     tagTypes: ["Products"],
     endpoints: (builder) => ({
+        addProduct: builder.mutation({
+            query: (product) => ({
+                url: "/products",
+                method: "POST",
+                body: product,
+            }),
+            invalidatesTags: ["Products"],
+        }),
         getProducts: builder.query({
             query: (query) => {
                 const params = new URLSearchParams();
@@ -45,10 +53,19 @@ export const baseApi = createApi({
             }),
             providesTags: ["Products"],
         }),
+        deleteProduct: builder.mutation({
+            query: (id) => ({
+                url: `/products/${id}`,
+                method: "DELETE",
+            }),
+            invalidatesTags: ["Products"],
+        }),
     }),
 });
 
 export const {
     useGetProductsQuery,
+    useAddProductMutation,
     useGetSingleProductQuery,
+    useDeleteProductMutation,
 } = baseApi;
