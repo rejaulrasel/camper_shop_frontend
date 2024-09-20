@@ -13,7 +13,7 @@ const HomePage = () => {
         <BestSellingSection />
         <CategorySection />
       </div>
-      {/* <FeaturedSection /> */}
+      <FeaturedSection />
       <div className="max-w-screen-xl mx-auto">
         <TestimonialSection />
         <FAQSection />

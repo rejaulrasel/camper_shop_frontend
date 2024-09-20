@@ -1,4 +1,4 @@
-import { useGetProductsQuery } from "@/redux/api/baseApi";
+import { useGetProductsQuery } from "../../redux/api/baseApi";
 import ProductCart, { TProduct } from "../ProductCart/ProductCard";
 import Loader from "../Loader/Loader";
 import Error from "../animation/Error";
