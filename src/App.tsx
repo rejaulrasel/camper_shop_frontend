@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-// import Navbar from "./components/layout/Navbar";
-// import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import { useEffect } from "react";
 import { useAppSelector } from "./redux/hook";
 
@@ -32,9 +32,9 @@ function App() {
 
   return (
     <section>
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </section>
   );
 }
