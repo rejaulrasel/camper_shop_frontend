@@ -10,6 +10,7 @@ import UpdateProduct from "../pages/ProductManagement/UpdateProduct";
 import CartPage from "../pages/Cart/CartPage";
 import Checkout from "../pages/Checkout/Checkout";
 import OrderSuccess from "../pages/OrderSuccess/OrderSuccess";
+import AboutPage from "../pages/About/AboutPage";
 
 export const router: ReturnType<typeof createBrowserRouter> =
   createBrowserRouter([
@@ -53,6 +54,10 @@ export const router: ReturnType<typeof createBrowserRouter> =
         {
           path: "order-success",
           element: <OrderSuccess />,
+        },
+        {
+          path: "about-us",
+          element: <AboutPage />,
         },
       ],
     },

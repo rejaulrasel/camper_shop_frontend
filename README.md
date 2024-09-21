@@ -1,30 +1,109 @@
-# React + TypeScript + Vite
+# Campers Shop Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Camper Shop is an e-commerce website dedicated to providing all the necessary
+and fun items for camping enthusiasts. The design is user-friendly and visually
+appealing, offering a wide range of camping gear to meet the needs of outdoor
+adventurers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live URL
 
-## Expanding the ESLint configuration
+[Camper Shop]
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation Steps
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```bash
+   git clonehttps://github.com/rejaulrasel/camper_shop_frontend.git
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Install the project dependencies using npm:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+
+   Create a new file named .env in the root of your project and add the
+   following content:
+
+   ```bash
+   VITE_IMAGEBB_API_KEY=your_secret
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+## 📝 Project Description
+
+Campers Shop is designed to offer camping enthusiasts a comprehensive and
+enjoyable shopping experience. The website allows users to browse, search, and
+filter a variety of camping products. Users can view detailed product
+information, manage their shopping cart, and complete purchases with ease. The
+goal is to create a seamless and engaging online shopping experience tailored to
+the needs of campers.
+
+## Features
+
+- User-friendly and visually appealing interface
+- Homepage with hero section, best-selling products, categories, featured
+  products, and unique sections like testimonials
+- Products Page with search, filter, and sorting functionalities
+- Detailed Product Page with information, ratings, and image magnifier
+- Product Management for creating, updating, and deleting products
+- Cart Page with quantity controls, remove product button, and dynamic
+  pricing details
+- Checkout Page with user details form and payment methods
+- About Us Page with contact information, map, social media links, mission
+  statement, and team members
+- Responsive design and state management using Redux
+- Fast loading times and intuitive navigation
+- Accessibility features and interactive elements
+
+## Technology Stack
+
+- **Front-End:**
+
+- [React](https://react.dev/)
+- [Redux](https://redux-toolkit.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/en/main)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
+- **Backend:**
+
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [JWT (JSON Web Token)](https://www.npmjs.com/package/jsonwebtoken)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
+- 🔨 **Development Tools:**
+
+  - [VS Code](https://code.visualstudio.com/)
+  - [Postman (API testing)](https://www.postman.com/)
+  - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+  - [Vite](https://vitejs.dev/)
+
+## Installation Guideline
+
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [**Node.js**](https://nodejs.org/en) installed on your machine (v18 or
+  higher recommended)
+- A code editor like [**VSCode**](https://code.visualstudio.com/)
+- ✅ [**TypeScript**](https://www.typescriptlang.org/) installed
+- ✅ [**npm**](https://www.npmjs.com/) installed
