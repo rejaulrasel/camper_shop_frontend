@@ -7,6 +7,8 @@ import NotFound from "../pages/NotFound/NotFound";
 import ProductManagement from "../pages/ProductManagement/ProductManagement";
 import CreateProduct from "../pages/ProductManagement/CreateProduct";
 import UpdateProduct from "../pages/ProductManagement/UpdateProduct";
+import CartPage from "../pages/Cart/CartPage";
+import Checkout from "../pages/Checkout/Checkout";
 
 export const router: ReturnType<typeof createBrowserRouter> =
   createBrowserRouter([
@@ -38,6 +40,14 @@ export const router: ReturnType<typeof createBrowserRouter> =
         {
           path: "update-product/:id",
           element: <UpdateProduct />,
+        },
+        {
+          path: "cart",
+          element: <CartPage />,
+        },
+        {
+          path: "checkout",
+          element: <Checkout />,
         },
       ],
     },

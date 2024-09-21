@@ -72,6 +72,24 @@ export const baseApi = createApi({
             }),
             invalidatesTags: ["Products"],
         }),
+        // payment
+        addOrder: builder.mutation({
+            query: (orderData) => ({
+                url: "/orders",
+                method: "POST",
+                body: orderData,
+            }),
+        }),
+        updateCartInfo: builder.mutation({
+            query: (updatedProductData: object) => {
+                return {
+                    url: `/products`,
+                    method: "PUT",
+                    body: updatedProductData,
+                };
+            },
+            invalidatesTags: ["Products"],
+        }),
     }),
 });
 
@@ -81,4 +99,6 @@ export const {
     useGetSingleProductQuery,
     useUpdateProductMutation,
     useDeleteProductMutation,
+    useAddOrderMutation,
+    useUpdateCartInfoMutation
 } = baseApi;
