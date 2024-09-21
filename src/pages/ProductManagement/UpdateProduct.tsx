@@ -1,11 +1,11 @@
-import Loader from "@/components/Loader/Loader";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import Loader from "../../components/Loader/Loader";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
 import {
   useGetSingleProductQuery,
   useUpdateProductMutation,
-} from "@/redux/api/baseApi";
+} from "../../redux/api/baseApi";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";

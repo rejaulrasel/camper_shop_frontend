@@ -6,6 +6,7 @@ import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import NotFound from "../pages/NotFound/NotFound";
 import ProductManagement from "../pages/ProductManagement/ProductManagement";
 import CreateProduct from "../pages/ProductManagement/CreateProduct";
+import UpdateProduct from "../pages/ProductManagement/UpdateProduct";
 
 export const router: ReturnType<typeof createBrowserRouter> =
   createBrowserRouter([
@@ -33,6 +34,10 @@ export const router: ReturnType<typeof createBrowserRouter> =
         {
           path: "create-product",
           element: <CreateProduct />,
+        },
+        {
+          path: "update-product/:id",
+          element: <UpdateProduct />,
         },
       ],
     },

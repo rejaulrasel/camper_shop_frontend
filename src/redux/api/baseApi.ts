@@ -15,6 +15,7 @@ export const baseApi = createApi({
             }),
             invalidatesTags: ["Products"],
         }),
+
         getProducts: builder.query({
             query: (query) => {
                 const params = new URLSearchParams();
@@ -46,12 +47,23 @@ export const baseApi = createApi({
             },
             providesTags: ["Products"],
         }),
+
         getSingleProduct: builder.query({
             query: (id) => ({
                 url: `/products/${id}`,
                 method: "GET",
             }),
             providesTags: ["Products"],
+        }),
+        updateProduct: builder.mutation({
+            query: (data) => {
+                return {
+                    url: `/products/${data.id}`,
+                    method: "PUT",
+                    body: data.updatedData,
+                };
+            },
+            invalidatesTags: ["Products"],
         }),
         deleteProduct: builder.mutation({
             query: (id) => ({
@@ -67,5 +79,6 @@ export const {
     useGetProductsQuery,
     useAddProductMutation,
     useGetSingleProductQuery,
+    useUpdateProductMutation,
     useDeleteProductMutation,
 } = baseApi;
