@@ -47,6 +47,9 @@ export const cartSlice = createSlice({
     deleteItem: (state, action: PayloadAction<string>) => {
       return state.filter((item) => item._id !== action.payload);
     },
+    clearCart: () => {
+      return []; // Set the cart state to an empty array after placing the order
+    },
   },
 });
 
@@ -56,5 +59,6 @@ export const {
   increaseQuantity,
   decreaseQuantity,
   deleteItem,
+  clearCart,
 } = cartSlice.actions;
 export default cartSlice.reducer;

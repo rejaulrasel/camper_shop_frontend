@@ -12,7 +12,8 @@ import {
   useAddOrderMutation,
   useUpdateCartInfoMutation,
 } from "../../redux/api/baseApi";
-import { useAppSelector } from "../../redux/hook";
+import { clearCart } from "../../redux/features/CartSlice";
+import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { Label } from "@radix-ui/react-label";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -29,6 +30,7 @@ type FormData = {
 const Checkout = () => {
   const [onCash, setIsOnCash] = useState<string>("");
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
 
   const {
     register,
@@ -63,6 +65,7 @@ const Checkout = () => {
 
       if (res?.success && result?.success) {
         toast.success(res?.message);
+        dispatch(clearCart());
         navigate("/order-success");
       }
     } catch (err) {
