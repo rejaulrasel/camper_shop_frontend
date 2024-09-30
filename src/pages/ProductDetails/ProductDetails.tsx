@@ -37,13 +37,14 @@ const ProductDetails = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const { data, isLoading } = useGetSingleProductQuery(id);
+  console.log(data);
 
   const dispatch = useAppDispatch();
   const cart = useAppSelector((state) => state.cart);
   const currentProduct = cart?.find((item) => item._id === id);
 
   const handleAddToCart = async () => {
-    const { __v, quantity: oldQuantity, ...otherData } = data.data;
+    const { quantity: oldQuantity, ...otherData } = data.data;
 
     const cartData = {
       ...otherData,
@@ -138,12 +139,7 @@ const ProductDetails = () => {
         </div>
 
         <div className="py-4 border-b-2 border-gray-800">
-          <p className="text-gray-800 font-medium">
-            Your one-stop online store for all camping essentials. From tents to
-            hiking gear, we offer top-quality products to make your outdoor
-            adventures unforgettable. Explore, discover, and gear up with
-            Campers Shop.
-          </p>
+          <p className="text-gray-800 font-medium">{data?.data?.description}</p>
           <Button
             onClick={handleAddToCart}
             disabled={

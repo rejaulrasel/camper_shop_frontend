@@ -212,7 +212,7 @@ const Footer = () => {
                 alt="mountain-image"
               />
               <h2 className="font-bold text-lg md:text-xl lg:text-3xl text-white font-young-serif">
-                Camper <span className="text-orange-600">Shop</span>
+                Campers <span className="text-orange-600">Shop</span>
               </h2>
             </Link>
             {/* Border */}
